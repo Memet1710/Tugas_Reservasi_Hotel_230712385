@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Reservation Hotel Room</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="reservasi_hotel.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Reservation Hotel Room</h1>
+    <form action="#thanks" method="post">
+      <fieldset>
+        <legend><strong>Personal Data</strong></legend>
+        <ol>
+          <li><label for="name">Name</label><input type="text" id="name" name="name" required="required" /></li>
+          <li><label for="gender">Gender</label><input type="text" id="gender" name="gender" /></li>
+          <li><label for="email">Email Address</label><input type="email" id="email" name="email" required="required" /></li>
+          <li><label for="telp">Telp Number</label><input type="text" id="telp" name="telp" /></li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend><strong>Reservation Room Form</strong></legend>
+        <ol>
+          <li><label for="resname">Reservation Name</label><input type="text" id="resname" name="resname" required="required" /></li>
+          <li><label for="bookdate">Booking Date</label><input type="date" id="bookdate" name="bookdate" required="required" /></li>
+          <li><label for="roomtype">Room Type</label>
+            <select id="roomtype" name="roomtype">
+              <option value="deluxe">Deluxe</option><option value="suite">Suite</option><option value="standard">Standard</option>
+            </select></li>
+          <li><label for="bedtype">Bed Type</label>
+            <select id="bedtype" name="bedtype">
+              <option value="single">Single Bed</option><option value="double">Double Bed</option>
+            </select></li>
+          <li class="inline">
+            <span>Breakfast</span>
+            <label><input type="radio" id="with" name="breakfast" value="with" checked="checked" /> With Breakfast</label>
+            <label><input type="radio" id="without" name="breakfast" value="without" /> Without Breakfast</label>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend><strong>Payment</strong></legend>
+        <ol>
+          <li><label for="checkin">Check In Date</label><input type="date" id="checkin" name="checkin" required="required" /></li>
+          <li><label for="checkout">Check Out Date</label><input type="date" id="checkout" name="checkout" required="required" /></li>
+          <li><label for="payment">Payment Method</label>
+            <select id="payment" name="payment">
+              <option value="cash">Cash</option><option value="credit">Credit Card</option><option value="debit">Debit Card</option>
+            </select></li>
+        </ol>
+      </fieldset>
+      <div class="actions">
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+  <div id="thanks">
+    <span class="dot"></span>
+    <span>Terima kasih! Reservasi Anda berhasil dikirim.</span>
+  </div>
+</body>
+</html>
